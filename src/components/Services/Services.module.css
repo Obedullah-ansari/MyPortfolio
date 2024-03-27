@@ -1,0 +1,115 @@
+.portfolio{
+    position: relative;
+}
+.progress{
+    position: sticky;
+    top:0 ;
+    left: 0;
+    padding: 2rem;
+    text-align: center;
+    color: orange;
+    font-size: 2rem;
+
+}
+.progressbar{
+    height: 0.3rem;
+    background-color: white;
+    border-radius: 1rem;
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.wrapper{
+    max-width: 1366px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
+
+}
+.imgconatiner{
+    flex :1;
+    height: 50%;
+}
+.img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: 0.5rem;
+}
+.textcontainer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.textcontainer  h2{
+ font-size: 3rem;
+
+}
+.textcontainer  p{
+    font-size: 1rem;
+}
+
+@media(max-width: 1024px) {
+    .imgconatiner{
+        flex :1;
+        width: 100%;
+        height: 30%
+    }
+    .textcontainer  h2{
+        font-size: 1.6rem;
+       
+       }
+       .textcontainer  p{
+        font-size: 0.8rem;
+    }
+    .progress h1{
+        font-size: 2rem;
+    }
+
+    .wrapper{
+    
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        gap: 0.5rem;
+        height: 100%;
+        justify-content: center;
+    }
+    .imgconatiner{
+        flex :1;
+        height: 45%;
+        padding: 1rem;
+        width: 100%;
+        margin-top: 10rem;
+    }
+    .textcontainer{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem;
+        margin-top:2rem;
+    }
+    .progress{
+        position: sticky;
+        top: 4rem;
+        bottom: 0;
+        padding: 2rem;
+        text-align: center;
+        color: orange;
+        font-size: 2rem;
+    
+    }
+  
+}

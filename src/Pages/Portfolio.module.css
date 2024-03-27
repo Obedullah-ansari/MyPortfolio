@@ -1,0 +1,192 @@
+.main{
+    height: 100vh;
+    width: 100%;
+   overflow: hidden;
+   color: white;
+   background-color: rgb(45, 23, 54);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar{
+ height: 100vh;
+
+ width: 25%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding: 0.5rem;
+}
+.projects{
+    height: 73vh;
+    width: 100%;
+    border-radius: 0.5rem;
+     text-align: center;
+    margin: 0.5rem;
+    background: linear-gradient(60deg,rgb(79, 35, 63) ,rgb(52, 43, 102));
+}
+.projects ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+.btbox{
+    width: 100%;
+    text-align: end;
+    padding: 1rem;
+}
+.list{
+    font-size: 1.5rem;
+    list-style: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.rating{
+    height: 27vh;
+    background: linear-gradient(360deg,rgb(79, 35, 63) ,rgb(52, 43, 102));
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.bodypart{
+    height: 96vh;
+    background: linear-gradient(90deg,rgb(79, 35, 63) ,rgb(52, 43, 102));
+    border-radius: 0.5rem;
+    width: 75%;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+}
+.projectconatiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+    padding: 2rem;
+    gap: 1rem;
+    margin-top: 2.5rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+}
+.visitbtn{
+    margin: 0.5rem;
+    padding: 1rem;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 0.8rem;
+    color: rgb(19, 18, 18);
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 1px 1px 10px 1px white;
+    width: 5rem;
+    text-align: center;
+}
+.vedioconatiner{
+    height: 25vh;
+    width: 100%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.projectvedio{
+    object-fit: cover;
+    height: 25vh;
+    width: 30%;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px 4px rgb(243, 241, 241);
+}
+.proimg{
+    width: 7rem;
+    height: 7rem;
+}
+.tictac{
+    background: linear-gradient(rgb(240, 163, 29) ,rgb(32, 32, 32));
+
+}
+.timer{
+    background: linear-gradient(rgb(14, 36, 37) ,rgb(52, 122, 125));
+}
+.mydiary{
+    background: linear-gradient(rgb(172, 175, 175) ,rgb(61, 61, 60));
+}
+.pikker{
+    background: linear-gradient(rgb(43, 24, 57) ,rgb(52, 43, 102));
+}
+.openbtn{
+    display: none;
+    background: none;
+    border: none;
+}
+@media (max-width:700px) {
+    .sidebar{
+        position: absolute;
+        width: 85%;
+        background-color: rgb(63, 46, 81);
+        left: -350PX;
+        z-index: 1;
+        transition: 0.5s;
+       }
+       .showsidebarhandel{
+        position: absolute;
+        width: 85%;
+        background-color: rgb(63, 46, 81);
+        left: 0px;
+        z-index: 1;
+       }
+       .bodypart{
+        height: 100vh;
+        background: linear-gradient(90deg,rgb(79, 35, 63) ,rgb(52, 43, 102));
+        border-radius: 0.5rem;
+        width: 100%;
+        margin: 0.2rem;
+        padding: 1rem;
+        
+    }
+    .projectconatiner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        padding: 2rem;
+        gap: 1rem;
+        margin: 0rem;
+        box-sizing: border-box;
+        border-radius: 1rem;
+        margin-top: auto
+    }
+    .vedioconatiner{
+        height: auto;
+        width: 100%;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    .projectvedio{
+        object-fit: cover;
+        height: 15vh;
+        width: 50%;
+        border-radius: 0.5rem;
+        box-shadow: 1px 1px 10px 4px rgb(243, 241, 241);
+    }
+    .proimg{
+        width: 5rem;
+        height: 5rem;
+    }
+    .openbtn{
+        display: inline;
+    }
+}

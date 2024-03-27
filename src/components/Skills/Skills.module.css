@@ -1,0 +1,198 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 0.2rem;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.599),rgba(4,9,30,0.7)),url('./navy-blue-concrete-wall-with-scratches.jpg');;
+    box-sizing: border-box;
+    padding-top:2rem;
+    text-align: center;
+    background-size: cover;
+}
+
+.headingtext h1{
+    font-size: 3rem;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.buttonsection{
+    width: 50%;
+    height: 100%;
+     display:  flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding: 0.5rem;
+}
+.buttonsection h2{
+    font-size: 2rem;
+    padding: 1rem;
+}
+.skillsbuttons{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; 
+   
+}
+.skillsbuttons button{
+    border: none;
+    background: transparent;
+    color: white;
+    width: 50%;
+    height: 8rem;
+    cursor: pointer;  
+   border-radius: 0.8rem;
+   font-size: 1.3rem;
+   box-shadow: inset 0 0 0 0 ;
+   background-color: rgba(255, 255, 255, 0.441);
+   transition: ease-out 0.3s;
+   outline: none;
+}
+.skillsbuttons button:hover{
+    box-shadow: inset 360px 0 0 0 white;
+    color: #252551;
+    font-size: 1.4rem;
+}
+.chartsection{
+    width: 50%;
+    height: 80%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+       
+}
+
+.barchart{
+    width: 85%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 0.5rem;
+    height: 80%;
+
+}
+.pichart{
+    width: 85%;
+    display: flex;
+    justify-content:center;
+    padding: 0.5rem;
+    height: 80%;
+    
+}
+.progressbar{
+    display: inline-block;
+    height: 0.3rem;
+    border-radius: 1rem;
+    background-color: rgb(233, 214, 51);
+}
+
+.initialtext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.initialtext img{
+    width: 60%;
+    height: 60%;
+    border-radius: 1rem;
+}
+
+
+@media(max-width :600px){
+ 
+    .container{
+        width: 100%;
+        box-sizing: border-box;
+        overflow :hidden;
+        height: 100vh;
+        padding-top: 0;
+    }
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .buttonsection{
+        width: 100%;
+        height: 30%;
+         display:  flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         gap: 0.5rem;
+    }
+    .skillsbuttons{
+        height: 30%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem; 
+       
+    }
+    .skillsbuttons button{
+        border: 1px solid white;
+        background: transparent;
+        color: white;
+        width: 50%;
+        height: 3rem;
+        cursor: pointer;  
+        font-size: 0.8rem; 
+    }
+    .skillsbuttons button:hover{
+        box-shadow: inset 360px 0 0 0 white;
+        color: #252551;
+        font-size: 1rem;
+    }
+   
+    .chartsection{
+        width: 100%;
+        height: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+        margin: 0rem;
+    }
+
+    .barchart{
+        width: 100%;
+        height: auto;
+    }
+    .pichart{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .headingtext{
+        position: relative;
+        top:4.3rem
+    }
+    .headingtext h1{
+      font-size: 1.5rem;
+      
+    }
+    .headingtext span{
+        height: 0.2rem;
+    }
+    .buttonsection h2{
+        font-size: 1.3rem;
+    }
+    .initialtext img{
+        width: 100%;
+        height: 60%;
+        border-radius: 1rem;
+    }
+
+}

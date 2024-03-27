@@ -1,0 +1,184 @@
+.conatiner{
+    display: flex;
+    padding: 1rem;
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.599),rgba(4,9,30,0.7)),url("./blue-smooth-textured-paper-background.jpg");
+    background-size: cover;
+}
+.aboutme{
+   text-align: justify;
+   height:  80%;
+   width: 60%;
+   padding-left: 10rem;
+   padding-right: 1rem;
+   padding-top: 3rem;
+   box-sizing: border-box;
+}
+.aboutme h3{
+    color: rgb(211, 205, 205);
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: "Rubik", sans-serif;
+    letter-spacing: 0.5rem;
+    margin: 1rem;
+}
+.btnsection button{
+    padding: 1rem;
+    background: none;
+    border: none;
+    color: rgb(34, 30, 53);
+    margin-left: 1rem;
+    background-color: rgb(244, 239, 239);
+    border-radius: 1rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+.myheroimg{
+    height: 80%;
+   width: 40%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   z-index: 1;
+}
+.makeitrisposive{
+    height: 100%;
+    width: 100%;
+}
+.astro{
+    animation: animate  2s infinite ease alternate;
+    position: absolute;
+}
+@keyframes animate {
+    to{
+        transform: translateY(1rem)
+    }
+}
+.astro{
+   width: 20rem;
+}
+.info{
+    padding: 1rem;
+    height: 35vh;
+}
+.me{
+    font-family: "PT Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.me span{
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    color: rgb(241, 30, 241);
+    font-weight: 600;
+    text-shadow: 1px 1px 5px rgb(134, 44, 134);
+}
+.education{
+    font-family: "PT Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+}
+.education span{
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    color: rgb(241, 30, 241);
+    font-weight: 600;
+    text-shadow: 1px 1px 5px rgb(134, 44, 134);
+}
+
+.cv{
+    margin: 0.5rem;
+    padding: 1rem;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 0.8rem;
+    color: rgb(19, 18, 18);
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 1px 1px 10px 1px rgb(251, 15, 251);
+}
+.cv:hover{
+    box-shadow: 1px 1px 10px 5px rgb(251, 15, 251) ;
+}
+.shadow{
+    box-shadow: 1px 1px 10px 5px rgb(251, 15, 251) ;
+  }
+@media (max-width :700px){
+    .conatiner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        padding: 0px;
+        padding-top :2rem;
+       
+    }
+    .aboutme{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       height: auto;
+       padding: 0.1rem;
+       width: 100%;
+       margin: 0px;
+     }
+     .info{
+        height: auto;
+        overflow: auto;
+     }
+     .aboutme h3{
+        color: rgb(211, 205, 205);
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: "Rubik", sans-serif;
+        margin: 1rem;
+        letter-spacing: 0.1rem;
+        text-wrap: nowrap;
+    }
+     .btnsection{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+     }
+        .btnsection button{
+            margin: 0.1rem;
+            padding: 0.4rem;
+            border-radius: 0.6rem;
+        }
+        .myheroimg{
+            height: auto;
+            width: 100%
+        }
+        .astro{
+            width: 10rem;
+            z-index: 1;
+         }
+         .makeitrisposive{
+           height: 35vh;
+            width: 100%;
+        }
+        .cv{
+            margin: 0.1rem;
+            padding: 0.4rem;
+            border-radius: 0.6rem;
+        }
+        p{
+            font-size: 0.85rem;
+        }
+        .education span{
+            font-size: 0.9rem;
+        } 
+        .me span{
+            font-size: 0.9rem;
+          
+        }
+}
